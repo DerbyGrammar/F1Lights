@@ -15,3 +15,9 @@ F1Lights::runSequence() {
     delay(_delay);
   }
 }
+
+F1Lights::lightsOff() {
+  for(int i = 0; i < (sizeof(_pins)/sizeof(_pins[0])); i++) {
+    digitalWrite(_pins[i], LOW)
+  }
+}
